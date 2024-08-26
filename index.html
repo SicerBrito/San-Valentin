@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazones Escondidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="background-music" loop>
+        <source src="romantic_music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="game-container">
+        <h1>Corazones Escondidos</h1>
+        <input id="player1-name" placeholder="Tu nombre">
+        <input id="player2-name" placeholder="Nombre de tu pareja">
+        <div id="game-area">
+            <div id="image-container">
+                <img id="game-image" src="" alt="Imagen del juego">
+                <!-- Los corazones se añadirán aquí dinámicamente -->
+            </div>
+            <div id="hearts-counter">Corazones: <span id="hearts-found">0</span>/<span id="total-hearts">0</span></div>
+            <div id="score">Puntuación: <span id="score-value">0</span></div>
+            <div id="timer">Tiempo: <span id="time-left">30</span>s</div>
+        </div>
+        <div id="message-area"></div>
+        <button id="start-button">Comenzar Juego</button>
+        <button id="hint-button">Pista</button>
+    </div>
+    <audio id="heart-sound" src="heart_sound.mp3"></audio>
+    <script src="main.js"></script>
+</body>
+</html>

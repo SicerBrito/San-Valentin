@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffe6e6;
+    font-family: 'Brush Script MT', cursive;
+    background: linear-gradient(to bottom, #ffe6e6, #ffb3b3);
+    color: #8b0000;
+}
+
+#game-container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #ff6b6b;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+}
+
+#game-area {
+    position: relative;
+    margin: 20px 0;
+}
+
+#image-container {
+    position: relative;
+    display: inline-block;
+}
+
+#game-image {
+    max-width: 100%;
+    max-height: 60vh;
+    border: 2px solid #ff6b6b;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #ff1493;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.heart:hover {
+    opacity: 1;
+}
+
+#hearts-counter, #score, #timer {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#message-area {
+    height: 50px;
+    margin: 10px 0;
+    font-style: italic;
+    color: #ff6b6b;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s;
+    background-color: #ff69b4;
+    border: 2px solid #ff1493;
+}
+
+button:hover {
+    background-color: #ff4757;
+    background-color: #ff1493;
+}
+
+#hint-button {
+    background-color: #5352ed;
+}
+
+#hint-button:hover {
+    background-color: #3742fa;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    z-index: 10; /* Asegura que los corazones estén por encima de la imagen */
+    filter: drop-shadow(0 0 2px #ff69b4);
+}
+
+.heart:hover {
+    opacity: 1;
+}
+
+@keyframes heartBurst {
+    to {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.heart-burst {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://images.template.net/73212/Free-small-heart-outline-clipart-1.jpg');
+    background-size: contain;
+    animation: heartBurst 1s forwards;
+}
