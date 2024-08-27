@@ -3,33 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corazones Escondidos</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Corazones de Amor Eterno</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-
+    <div id="particles-js"></div>
+    <div id="game-container">
+        <h1>Corazones de Amor Eterno</h1>
+        <h2 id="lover-title">Mi Reina... mi Esposa... mi Amor...</h2>
+        <div id="game-area">
+            <div id="image-container">
+                <img id="game-image" src="https://i.etsystatic.com/18366627/r/il/0587f2/5342640114/il_1140xN.5342640114_ms9f.jpg" alt="Imagen del juego">
+            </div>
+            <div id="hearts-counter">Corazones: <span id="hearts-found">0</span>/<span id="total-hearts">0</span></div>
+            <div id="score">Amor acumulado: <span id="score-value">0</span></div>
+            <div id="timer">Tiempo de amor: <span id="time-left">30</span>s</div>
+        </div>
+        <div id="message-area"></div>
+        <button id="start-button">Comenzar Nuestro Viaje de Amor</button>
+        <button id="hint-button">Pista de Amor</button>
+    </div>
+    <audio id="heart-sound" src="heart_sound.mp3"></audio>
     <audio id="background-music" loop>
         <source src="romantic_music.mp3" type="audio/mpeg">
     </audio>
-
-    <div id="game-container">
-        <h1>Corazones Escondidos</h1>
-        <input id="player1-name" placeholder="Tu nombre">
-        <input id="player2-name" placeholder="Nombre de tu pareja">
-        <div id="game-area">
-            <div id="image-container">
-                <img id="game-image" src="" alt="Imagen del juego">
-                <!-- Los corazones se añadirán aquí dinámicamente -->
-            </div>
-            <div id="hearts-counter">Corazones: <span id="hearts-found">0</span>/<span id="total-hearts">0</span></div>
-            <div id="score">Puntuación: <span id="score-value">0</span></div>
-            <div id="timer">Tiempo: <span id="time-left">30</span>s</div>
-        </div>
-        <div id="message-area"></div>
-        <button id="start-button">Comenzar Juego</button>
-        <button id="hint-button">Pista</button>
-    </div>
-    <audio id="heart-sound" src="heart_sound.mp3"></audio>
-    <script src="main.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>
