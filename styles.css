@@ -6,6 +6,7 @@ body, html {
     overflow: hidden;
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    scrollbar-color: #aaaaff;
 }
 
 #particles-js {
